@@ -3,7 +3,7 @@ using System.Collections;
 
 public class UFOController : MonoBehaviour {
 
-	int i=0; 
+	float speed = 10;
 
 	// Use this for initialization
 	void Start () {
@@ -13,8 +13,23 @@ public class UFOController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log("Hello Update" + i );
-		i=i+1;
+
+		if( Input.GetKey( KeyCode.W)){
+			this.transform.position+= new Vector3( 0, speed * Time.deltaTime , 0 );
+		}
+
+		if( Input.GetKey( KeyCode.S)){
+			this.transform.position+= new Vector3( 0, -speed * Time.deltaTime , 0 );
+		}
+
+		if( Input.GetKey( KeyCode.A)){
+			this.transform.position+= new Vector3( -speed * Time.deltaTime , 0 ,0 );
+		}
+
+		if( Input.GetKey( KeyCode.D)){
+			this.transform.position+= new Vector3( speed * Time.deltaTime , 0 ,0 );
+		}
+
 	
 	}
 }
