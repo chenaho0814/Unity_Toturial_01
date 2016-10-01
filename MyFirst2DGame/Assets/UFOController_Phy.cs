@@ -7,6 +7,8 @@ public class UFOController_Phy : MonoBehaviour {
 
 	private Rigidbody2D rigidbody2D = null;
 
+	public ScoreManager scoreManager;
+
 	// Use this for initialization
 	void Start () {
 
@@ -41,6 +43,12 @@ public class UFOController_Phy : MonoBehaviour {
 	void OnTriggerEnter2D( Collider2D other){
 
 		Debug.Log("Collider2D:" + other.gameObject.name);
+
+		if(scoreManager)
+			scoreManager.AddScore(10);
+		else
+			Debug.Log( "please assign ScoreManager");
+
 		other.gameObject.SetActive(false);
 	}
 
