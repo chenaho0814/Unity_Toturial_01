@@ -38,6 +38,12 @@ public class UFOController_Phy : MonoBehaviour {
 	}
 
 
+	void OnTriggerEnter2D( Collision2D other){
+
+		other.gameObject.SetActive(false);
+	}
+
+
 
 
 
