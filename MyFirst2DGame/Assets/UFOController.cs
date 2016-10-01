@@ -3,7 +3,7 @@ using System.Collections;
 
 public class UFOController : MonoBehaviour {
 
-	float speed = 10;
+	public float speed = 10;
 
 	// Use this for initialization
 	void Start () {
