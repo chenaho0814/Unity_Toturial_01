@@ -38,8 +38,9 @@ public class UFOController_Phy : MonoBehaviour {
 	}
 
 
-	void OnTriggerEnter2D( Collision2D other){
+	void OnTriggerEnter2D( Collider2D other){
 
+		Debug.Log("Collider2D:" + other.gameObject.name);
 		other.gameObject.SetActive(false);
 	}
 
