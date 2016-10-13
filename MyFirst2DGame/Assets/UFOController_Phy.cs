@@ -51,7 +51,7 @@ public class UFOController_Phy : MonoBehaviour {
 		if(scoreManager)
         {
             //if(picUpinstance && picUpinstance )
-                scoreManager.AddScore(picUpinstance.GetScore() );
+                scoreManager.AddScore(10);
         }
 			
 		else

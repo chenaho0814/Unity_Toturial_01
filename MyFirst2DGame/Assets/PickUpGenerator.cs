@@ -8,8 +8,6 @@ public class PickUpGenerator : MonoBehaviour {
     public int MinRandomCount = 3;
     public int MaxRandomCount = 10;
 
-    public int GoodPickUpRate = 60;
-
 	// Use this for initialization
 	void Start () {
 
@@ -22,13 +20,6 @@ public class PickUpGenerator : MonoBehaviour {
 
 
             PickUpController obj = GameObject.Instantiate(pickUpPrefab);
-
-            if (Random.Range(0, 100) <= GoodPickUpRate)
-                obj.initRole(PICKUP.PICUP_GOOD);
-            else
-                obj.initRole(PICKUP.PICUP_BAD);
-
-
           obj.name = "PickUp_" + i;
             obj.transform.position = new Vector3(nRandPositionX, nRandPositionY, 0);
 
