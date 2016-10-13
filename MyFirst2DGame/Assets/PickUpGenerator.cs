@@ -13,7 +13,7 @@ public class PickUpGenerator : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        int nRandomCount = Random.Range( 4, MaxRandomCount);
+        int nRandomCount = Random.Range( MinRandomCount, MaxRandomCount);
 
         for (int i = 0; i < nRandomCount; i++)
         {
