@@ -13,6 +13,8 @@ public class ScoreManager : MonoBehaviour {
 
     private bool m_bIsGameEnd = false;
 
+    public SoundManager GameSoundManager;
+
     // Use this for initialization
     void Start () {
 		_text = this.GetComponent<Text> ();
@@ -29,7 +31,14 @@ public class ScoreManager : MonoBehaviour {
 
 		_currentScore += score;
 		_text.text = ScorePrefix + _currentScore;
-	}
+
+        if (score > 0)
+            GameSoundManager.PlaySound("coin");
+        else
+            GameSoundManager.PlaySound("hurt");
+
+
+    }
 
     void CheckGameStatus() {
 
@@ -37,6 +46,8 @@ public class ScoreManager : MonoBehaviour {
             _text.text = "Win!!!";
             _text.color = Color.green;
             m_bIsGameEnd = true;
+
+            GameSoundManager.PlaySound("win");
         }
 
 
@@ -45,6 +56,8 @@ public class ScoreManager : MonoBehaviour {
             _text.text =  "Lose...";
             _text.color = Color.red;
             m_bIsGameEnd = true;
+
+            GameSoundManager.PlaySound("lose");
         }
 
     }
