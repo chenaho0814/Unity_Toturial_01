@@ -44,8 +44,16 @@ public class UFOController_Phy : MonoBehaviour {
 
 		Debug.Log("Collider2D:" + other.gameObject.name);
 
+        PickUpController picUpinstance = other.gameObject.GetComponent<PickUpController>();
+        //if( oth )
+
+
 		if(scoreManager)
-			scoreManager.AddScore(10);
+        {
+            //if(picUpinstance && picUpinstance )
+                scoreManager.AddScore(picUpinstance.GetScore() );
+        }
+			
 		else
 			Debug.Log( "please assign ScoreManager");
 
