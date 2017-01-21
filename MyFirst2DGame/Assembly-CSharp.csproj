@@ -51,6 +51,7 @@
      <Compile Include="Assets\PickUpGenerator.cs" />
      <Compile Include="Assets\ScoreManager.cs" />
      <Compile Include="Assets\SoundManager.cs" />
+     <Compile Include="Assets\UFOAnimation.cs" />
      <Compile Include="Assets\UFOController.cs" />
      <Compile Include="Assets\UFOController_Phy.cs" />
  <Reference Include="UnityEngine.UI">
