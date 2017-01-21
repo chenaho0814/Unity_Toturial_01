@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CH10_PlayerSimpleAnimationController.cs" />
      <Compile Include="Assets\CameraController.cs" />
      <Compile Include="Assets\Homework03.cs" />
      <Compile Include="Assets\PickUpController.cs" />
