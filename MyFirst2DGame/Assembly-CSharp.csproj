@@ -45,8 +45,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CH10_BackgroundClickDetector.cs" />
      <Compile Include="Assets\CH10_PlayerSimpleAnimationController.cs" />
      <Compile Include="Assets\CameraController.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
      <Compile Include="Assets\Homework03.cs" />
      <Compile Include="Assets\PickUpController.cs" />
      <Compile Include="Assets\PickUpGenerator.cs" />
@@ -55,11 +58,15 @@
      <Compile Include="Assets\UFOAnimation.cs" />
      <Compile Include="Assets\UFOController.cs" />
      <Compile Include="Assets\UFOController_Phy.cs" />
+     <None Include="Assets\Demigiant\DOTween\readme.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>/workspace_Course/Unity_Toturial/MyFirst2DGame/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
